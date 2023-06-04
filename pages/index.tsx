@@ -18,7 +18,7 @@ const HomePage: NextPage = () => {
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <div className="text-5xl  tracking-tight text-white sm:text-[5rem] text-center">
             <h1 className="text-[#4CAF50] justify-center font-audiowide">BANKS</h1>  
-            <span className="font-roboto font-text-[hsl(280,100%,70%)]">Commercial Doors and Glazing</span>
+            <span className="font-roboto font-text-[hsl(280,100%,70%)]">Commercial Doors and Glass</span>
           </div>
           <Image alt={"door"} src={"/doorabstract.png"} width={500} height={100}/>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
