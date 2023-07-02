@@ -1,11 +1,6 @@
 {
-  "/api/review": "pages/api/review.js",
-  "/api/short-story": "pages/api/short-story.js",
-  "/": "pages/index.html",
-  "/review": "pages/review.html",
   "/_app": "pages/_app.js",
-  "/short-story": "pages/short-story.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import NavigationBar from "./components/NavigationBar";
 
 const HomePage: NextPage = () => {
   return (
@@ -15,10 +16,14 @@ const HomePage: NextPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"/>
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#0F4D92] to-[#4E6C4E]">
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-          <div className="text-5xl  tracking-tight text-white sm:text-[5rem] text-center">
+        <div className="container flex flex-col items-center justify-center gap-6 px-4 py-8 md:py-16">
+          <div className="text-5xl tracking-tight text-white sm:text-[5rem] text-center">
             <h1 className="text-[#4CAF50] justify-center font-audiowide">BANKS</h1>  
-            {/* <span className="font-roboto font-text-[hsl(280,100%,70%)]">Commercial Doors and Glass</span> */}
+            <h2 className="text-3xl font-bold text-white text-center mb-6">Commercial Doors and Glass</h2>
+            {/* <span className="font-roboto font-text-[hsl(280,%,70%)]">Commercial Doors and Glass</span> */}
+          </div>
+          <div>
+            <NavigationBar />
           </div>
           <Image alt={"door"} src={"/doorabstract.png"} width={500} height={100}/>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
