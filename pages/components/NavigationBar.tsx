@@ -81,7 +81,7 @@ const NavigationBar = () => {
         <MenuItem href="/consulting">Consulting</MenuItem>
         <MenuItem href="/repair-service">Repair Service</MenuItem>
         <MenuItem href="/new-projects">New Projects</MenuItem>
-        <MenuItem href="/Tools">Tools</MenuItem>
+        <MenuItem href="/tools">Tools</MenuItem>
       </div>
     </div>
   )}
