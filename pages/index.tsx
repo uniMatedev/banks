@@ -24,18 +24,10 @@ const HomePage: NextPage = () => {
       />
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#0F4D92] to-[#4E6C4E]">
         <div className="container flex flex-col items-center justify-center gap-6 px-4 py-8 md:py-16">
-          <div className="text-5xl tracking-tight text-white sm:text-[5rem] text-center">
-            <h1 className="text-[#4CAF50] justify-center font-audiowide">
-              BANKS
-            </h1>
-            <h2 className="text-3xl font-bold text-white text-center mb-6">
-              Commercial Doors and Glazing
-            </h2>
-            {/* <span className="font-roboto font-text-[hsl(280,%,70%)]">Commercial Doors and Glass</span> */}
-          </div>
-          <div>
+          
+          
             <NavigationBar />
-          </div>
+          
 
           <Image
             alt="door"
