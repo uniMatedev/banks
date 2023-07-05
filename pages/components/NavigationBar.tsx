@@ -21,7 +21,7 @@ const NavigationBar = () => {
   );
 
   return (
-    <nav className="bg-gray-900">
+    <nav className=" flex items-center bg-gray-900">
       
        
           <div className="hidden md:block mx-auto">
@@ -33,7 +33,7 @@ const NavigationBar = () => {
             </div>
           </div>
           <div className=" flex md:hidden">
-            <div className="flex justify-center"> {/* Add this wrapper div */}
+            <div className="flex items-center justify-center"> {/* Add this wrapper div */}
               <button
                 type="button"
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
@@ -63,7 +63,7 @@ const NavigationBar = () => {
         
       
       {isMobileMenuOpen && (
-        <div className="md:hidden" id="mobile-menu">
+        <div className="f md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <MenuItem href="/consulting">Consulting</MenuItem>
             <MenuItem href="/repair-service">Repair Service</MenuItem>
