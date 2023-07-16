@@ -65,6 +65,13 @@ const LengthConverter = () => {
       >
         <option value="meters">Meters</option>
         <option value="feet">Feet</option>
+        <option value="inches">Inches</option>
+        <option value="miles">Miles</option>
+        <option value="kilometers">Kilometers</option>
+        <option value="millimeters">Millimeters</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="nautical miles">Nautical Miles</option>
+        <option value="yards">Yards</option>
       </select>
 
       <button
