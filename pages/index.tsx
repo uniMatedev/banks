@@ -27,13 +27,7 @@ const HomePage: NextPage = () => {
         <div className="container flex flex-col items-center justify-center gap-6 px-4 py-8 md:py-16">
           <NavigationBar />
 
-          <Image
-            alt="door"
-            src="/doorabstract.png"
-            width={500}
-            height={100}
-            
-          />
+          <Image alt="door" src="/doorabstract.png" width={500} height={100} />
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <Link

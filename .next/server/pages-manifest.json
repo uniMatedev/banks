@@ -2,7 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/tools": "pages/tools.js",
-  "/": "pages/index.js",
   "/convert-measure": "pages/convert-measure.js"
 }
