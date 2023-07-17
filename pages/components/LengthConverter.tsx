@@ -84,13 +84,14 @@ const LengthConverter = () => {
         {loading ? 'Converting...' : 'Convert'}
       </button>
 
-      <div className="mt-4">
-        {Object.keys(converted).map(unit => (
-          <div key={unit} className="text-gray-700">
-            {unit}: {converted[unit]}
-          </div>
-        ))}
-      </div>
+      <div className="mt-8 px-4 py-6 bg-gray-100 rounded-lg">
+  {Object.keys(converted).map(unit => (
+    <div key={unit}>
+      <div className="text-lg font-medium text-gray-800">{unit.charAt(0).toUpperCase() + unit.slice(1)}:</div>
+      <div className="text-xl font-bold text-indigo-500" >{converted[unit]}</div>  
+    </div>
+  ))}
+</div>
 
     </div>
   );
