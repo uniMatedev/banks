@@ -1,8 +1,9 @@
+import { stringify } from "querystring";
 import React, { useState } from "react";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL
 const LengthConverter = () => {
 
-  const [value, setValue] = useState(10);
+  const [value, setValue] = useState(0);
   const [unit, setUnit] = useState("meters");
   const [loading, setLoading] = useState(false);
   const [converted, setConverted] = useState({});
@@ -16,7 +17,7 @@ const LengthConverter = () => {
       const response = await fetch(apiUrl + 'convert/length/', {
         method: 'POST',
         body: JSON.stringify({
-          value: Number(value),
+          value: String(value),
           unit  
         })
       });
@@ -50,7 +51,8 @@ const LengthConverter = () => {
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  
         type="number"
         value={value}
-        onChange={e => setValue(Number(e.target.value))} 
+        onChange={e => setValue(e.target.value ? +e.target.value : null)}
+
       />
 
       <label className="block text-gray-700 font-bold mb-2" htmlFor="unit">
